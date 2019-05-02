@@ -173,6 +173,11 @@ img {
     padding: 2rem;
   }
 }
+@media (max-width: 800px) {
+  .container {
+    padding: 2rem;
+  }
+}
 header {
   padding: 1rem;
   border-bottom: 0.2rem dashed darkgray;
