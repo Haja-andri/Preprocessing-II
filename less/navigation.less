@@ -2,19 +2,31 @@
 header{
     padding: 1rem;
     border-bottom: .2rem dashed darkgray;
-    
     // loading the navigation part 
     nav{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;    
-    
-        a{
-            padding: .5rem 3rem;
-            font-size: 1.5rem;
-            color: #666666;
+        .menuList{
+            display: flex;
+            a{
+                padding: .5rem 3rem;
+                font-size: 1.5rem;
+                color: #666666;
+                @media @mobile {
+                    border-bottom: 1px solid lightpink;
+                    width: 100%;
+                }    
+            }    
+            @media @mobile {
+                flex-direction: column;
+                justify-items: center;
+            }    
         }
+        @media @mobile {
+            flex-direction: column;
+        }    
     }    
   }
 
