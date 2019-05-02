@@ -1,5 +1,7 @@
 // Navigation Styles here
 header{
+    display: flex;
+    justify-content: center;
     padding: 1rem;
     border-bottom: .2rem dashed darkgray;
     // loading the navigation part 
@@ -7,7 +9,8 @@ header{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;    
+        justify-content: space-between;  
+        width: 70%;
         .menuList{
             display: flex;
             a{
@@ -15,7 +18,6 @@ header{
                 font-size: 1.5rem;
                 color: #666666;
                 @media @mobile {
-                    border-bottom: 1px solid lightpink;
                     width: 100%;
                 }    
             }    

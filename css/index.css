@@ -179,6 +179,8 @@ img {
   }
 }
 header {
+  display: flex;
+  justify-content: center;
   padding: 1rem;
   border-bottom: 0.2rem dashed darkgray;
 }
@@ -187,6 +189,7 @@ header nav {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  width: 70%;
 }
 header nav .menuList {
   display: flex;
@@ -198,7 +201,6 @@ header nav .menuList a {
 }
 @media (max-width: 500px) {
   header nav .menuList a {
-    border-bottom: 1px solid lightpink;
     width: 100%;
   }
 }
